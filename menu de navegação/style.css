@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(0, 174, 255);
+    font-family: sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/*.item 
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    /*border: 1px solid #000;*/
+    /*margin: 1rem; -- Não utilizar margin, fazer o espaçamento direto no container */
+
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.menu {
+
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 0.5rem 1rem;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navegation {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    grid-gap: 1.5rem;
+}
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* utilizar repeat( x, y ) quando se deseja colocar muitas colunas ou linhas, sendo "x" a quantidade de repetições e "y" o tamanho  
+    grid-auto-rows: 200px;
+    grid-gap: 1rem; /Utilizar grid gap para espaçamentos
+    utilizar minmax() para fazer tamanhos dinâmicos, também utilizado para fazer responsividade junto com repeat(auto-gid)
+    utilizar grid-auto-rows: ; ou grid-auto-columns: ;, quando não souber quantas linhas e colunas terá
+    utilizar grid-auto-flow: ;, para mudar o tipo de visualização de linha para coluna
+    utilizar atalho com apenas grid: ;
+    
+    
+    */
